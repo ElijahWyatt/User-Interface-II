@@ -57,12 +57,10 @@ html{
 body{
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
-    background-image: url('assets/background.jpg');
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+}
+header{
+    width: 90%;
+    margin:0 auto;
 }
 h1{
     font-family: 'Roboto Condensed', sans-serif;
@@ -74,20 +72,23 @@ h2{
 }
 section{
     padding: 4% 0;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 nav{
-    padding: 2% 0;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1% 0;
 }
 nav a{
     display: inline-block;
     padding: 1% 0;
     width: 10%;
-    border-radius: 10px;
     text-align: center;
     color: purple;
     text-decoration: none;
+    border: 2px solid red;
 }
 .planet{
     width: 20%;
@@ -121,4 +122,16 @@ nav a{
 #section-two section{
     display: flex;
     justify-content: space-between;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer nav{
+    display: flex;
+    justify-content: center;
+}
+#footer-nav{
+    background-color: aquamarine;
 }
