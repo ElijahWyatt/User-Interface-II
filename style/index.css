@@ -48,3 +48,44 @@ blockquote, q {
     margin: 0;
     max-width: 100%;
 }
+
+/*General Styles Here*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+}
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 6rem; 
+}
+h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4rem; 
+}
+section{
+    padding: 4% 0;
+    width: 90%;
+    margin: 0 auto;
+}
+nav{
+    padding: 2% 0;
+}
+nav a{
+    display: inline-block;
+    padding: 1% 0;
+    width: 10%;
+    border-radius: 10px;
+    text-align: center;
+    color: purple;
+    text-decoration: none;
+}
+.planet{
+    width: 20%;
+}
+/*Section One*/
+#section-one{
+    
+}
