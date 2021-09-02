@@ -47,6 +47,7 @@ blockquote, q {
     padding: 0;
     margin: 0;
     max-width: 100%;
+    border: 1px solid black;
 }
 
 /*General Styles Here*/
@@ -56,6 +57,12 @@ html{
 body{
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
+    background-image: url('assets/background.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 h1{
     font-family: 'Roboto Condensed', sans-serif;
@@ -84,8 +91,34 @@ nav a{
 }
 .planet{
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*Section One*/
 #section-one{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#section-one div{
+    border: 5px solid red;
+    width: 45%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right > h2, a, p{
+    padding-bottom: 3%;
+}
+/*Section Two*/
+#section-two{
+    display: flex;
+    flex-direction: column;
+}
+#section-two section{
+    display: flex;
+    justify-content: space-between;
 }
