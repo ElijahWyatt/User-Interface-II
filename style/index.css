@@ -47,7 +47,7 @@ blockquote, q {
     padding: 0;
     margin: 0;
     max-width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /*General Styles Here*/
@@ -57,6 +57,8 @@ html{
 body{
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
+    /* background-color: #8ECAE6; */
+    background-image: linear-gradient(to bottom right, #321160, #02ff4a);
 }
 header{
     width: 90%;
@@ -64,7 +66,8 @@ header{
 }
 h1{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 6rem; 
+    font-size: 6rem;
+    color: #FFB703;
 }
 h2{
     font-family: 'Roboto Condensed', sans-serif;
@@ -86,15 +89,25 @@ nav a{
     padding: 1% 0;
     width: 10%;
     text-align: center;
-    color: purple;
+    color: #FB8500;
     text-decoration: none;
-    border: 2px solid red;
+    border: 2px solid #8ECAE6;
 }
 .planet{
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.planet a{
+    display: inline-block;
+    padding: 1% 0;
+    width: 50%;
+    text-align: center;
+    color: #f0eff4;
+    text-decoration: none;
+    border: 5px solid #321160;
+    border-radius: 10px;
 }
 /*Section One*/
 #section-one{
@@ -103,16 +116,24 @@ nav a{
     align-items: center;
 }
 #section-one div{
-    border: 5px solid red;
     width: 45%;
 }
 .right{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #FFB703;
 }
 .right > h2, a, p{
     padding-bottom: 3%;
+}
+.projects{
+    padding: 1% 0;
+    width: 20%;
+    text-align: center;
+    color: #FB8500;
+    text-decoration: none;
+    border: 2px solid #8ECAE6; 
 }
 /*Section Two*/
 #section-two{
