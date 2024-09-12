@@ -58,11 +58,13 @@ body{
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
     /* background-color: #8ECAE6; */
-    background-image: linear-gradient(to bottom right, #321160, #02ff4a);
 }
 header{
-    width: 90%;
-    margin:0 auto;
+    background-color: lightgrey;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+
 }
 h1{
     font-family: 'Roboto Condensed', sans-serif;
@@ -87,7 +89,6 @@ nav{
 nav a{
     display: inline-block;
     padding: 1% 0;
-    width: 10%;
     text-align: center;
     color: #FB8500;
     text-decoration: none;
@@ -104,9 +105,9 @@ nav a{
     padding: 1% 0;
     width: 50%;
     text-align: center;
-    color: #f0eff4;
+    color: black;
     text-decoration: none;
-    border: 5px solid #321160;
+    border: 5px solid black;
     border-radius: 10px;
 }
 /*Section One*/
@@ -145,6 +146,9 @@ nav a{
     justify-content: space-between;
 }
 footer{
+    background-color: lightgrey;
+    text-align: center;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,3 +164,38 @@ a:hover{
     text-transform: uppercase;
     font-weight: bold;
 }
+
+/* media queries design */
+@media(max-width:500px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+    }
+    header nav{
+        flex-direction: column;
+        align-items: center;
+        padding:2px;
+    }
+    /* section one */
+    #section-one{
+        flex-direction: column;
+    }
+    .right a{
+        width: auto;
+    }
+    .right p{
+        text-align: center;
+    }
+    /* section two */
+    #section-two section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .planet a{
+        width: auto;
+    }
+}
+
+
